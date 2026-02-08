@@ -43,8 +43,8 @@ export default function HomePage() {
                 <div className="adapter-panel">
                     <div className="adapter-panel-list">
                         <a href="/">{"Панель управления"}</a>
-                        <a href="/">{"Телеграм канал"}</a>
-                        <a href="/">{"Бот"}</a>
+                        <a href="https://t.me/+JCVz1CUPhOlkNzhi">{"Телеграм канал"}</a>
+                        <a href="https://t.me/podval_host_bot">{"Бот"}</a>
                     </div>
                 </div>
 

@@ -35,5 +35,12 @@
             background-image: url(../../public/imgs/render2.png);
         }
 
+        .layer-404 {
+            filter: brightness(1.9);
+            inset: 9vw;
+            transition: transform 3s cubic-bezier(.05, .5,0,1);
+            background-image: url(../../public/imgs/404_0.png);
+        }
+
     }
 }

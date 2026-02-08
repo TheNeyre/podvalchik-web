@@ -1,12 +1,39 @@
-.services-layout {
-    position: absolute;
-    background-color: black;
-    padding: 50px;
-    border: 1px solid #0ff33d;
-    border-radius: 15px;
+.services-container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
 
-    .free-servers-layout {
-        left: 50vw;
+    justify-content: center;
+
+
+    .services-layout {
+        font-size: 20px;
+        background-color: black;
+        padding: 20px;
+        border: 1px solid #004e17;
+        border-radius: 10px;
+        margin-top: 40px;
+        width: 589px;
+        height: 740px;
+
+        .tariff-plan-block {
+            border: 1px solid #002b0d;
+            border-radius: 30px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #00ff4c;
+            margin: 0;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        ul {
+            li {font-size: 35px; color: #00ff4c;}
+        }
+        a {
+            color: #00ff4c;
+        }
     }
-    .physic-servers-layout {}
 }
