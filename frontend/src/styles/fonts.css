@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "MTS WIBE BOLD";
+    src: url("../../public/fonts/MTSWide-Bold-XQ34CV62.ttf");
+}
+
+@font-face {
+    font-family: "MTS WIBE MEDIUM";
+    src: url("../../public/fonts/MTSWide-Medium-MH5A5AEJ.ttf");
+}
+
+@font-face {
+    font-family: "CONSOLAS";
+    src: url("../../public/fonts/consolas.ttf");
+}

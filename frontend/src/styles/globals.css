@@ -1,0 +1,77 @@
+* {
+    font-family: "MTS WIBE MEDIUM";
+    text-decoration: none;
+    list-style: none;
+    color: rgb(255, 255, 255);
+
+}
+
+header {
+    padding: 3px;
+    background-color: black;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(to left, #136d20, #00ff37) 1;
+}
+
+main {
+    padding: 50px;
+    perspective: 1000px; 
+    background: transparent;
+}
+
+.main-content {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    margin: 0;
+}
+
+.nav {
+    font-size: 20px;
+
+    ul {
+        margin: 10px;
+        padding: 0;
+        display: flex;
+        gap: 30px;
+        justify-content: flex-end;
+        padding-left: 20px;
+        padding-right: 30px;
+    }
+
+    ul li a {
+        text-align: center;
+        position: relative;
+        font-family: "MTS WIBE MEDIUM";
+
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 50% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 1px;
+        transition: background-size .3s;
+    }
+    ul li a:hover {
+        background-size: 100% 1px;
+    }
+
+
+    .first_nav_item {
+        margin-right: auto;
+        a {
+            text-align: center;
+            font-family: "MTS WIBE BOLD";
+            color: #0FFF43;
+            transition: all ease .4s;
+            text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+            transition: all ease .4s;
+        }
+        a:hover {
+            padding-left: 20px;
+            background: none;
+            color: black;
+            text-shadow: -1px -1px 0 #0FFF43, 1px -1px 0 #0FFF43, -1px 1px 0 #0FFF43, 1px 1px 0 #0FFF43;
+            transition: all ease .4s;
+        }
+
+    }
+}

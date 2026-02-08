@@ -1,0 +1,100 @@
+.windows {
+
+    
+    .window {
+        background-color: black;
+        position: absolute;
+        width: 900px;
+        height: 550px;
+        border: 2px solid #136d20;
+        border-radius: 10px;
+
+        animation: windows-animation 3s ease;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+
+        .window-header {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: right;
+            border-bottom: 2px solid #136d20;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            color: #136d20;
+            padding-right: 8px;
+            padding-bottom: 2px;
+            font-size: 20px;
+        }
+
+        .window-main-content p {
+            font-family: "MTS WIBE BOLD";
+            padding: 30px;
+            margin: 0;
+            font-size: 70px;
+            width: 70%;
+
+            b {
+
+                background: linear-gradient(45deg, #1aff00, #07ff20 );
+                background-clip: text;
+                color: transparent;   
+            }
+        }
+    }
+
+    .window-code {
+        background: transparent;
+        backdrop-filter: blur(8px);
+        position: absolute;
+        width: 600px;
+        height: 350px;
+        border: 2px solid #136d20;
+        border-radius: 10px;
+        margin-left: 400px;
+        margin-top: 300px;
+
+        animation: windows-animation 2s ease;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+
+        .window-code-header {
+            background-color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: right;
+            border-bottom: 2px solid #136d20;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            color: #136d20;
+            padding-right: 8px;
+            padding-bottom: 2px;
+            font-size: 20px;
+        }
+        .window-code-main-content {
+            padding: 10px;
+            background: transparent;
+        }
+        .window-code-main-content p {
+            background: transparent;
+            font-family: "CONSOLAS";
+            padding: 0px;
+            margin: 0;
+            font-size: 20px;
+            color: rgb(87, 87, 87);
+
+            .waiting-status {
+                background: transparent;
+                font-family: "CONSOLAS";
+                color: #9c1a1a;
+            }
+            .ok-status {
+                background: transparent;
+                font-family: "CONSOLAS";
+                color: #178f31;
+            }
+            .start-profile-status {
+                background: transparent;
+                font-family: "CONSOLAS";
+                color: #178f31;
+            }
+        }
+    }
+}

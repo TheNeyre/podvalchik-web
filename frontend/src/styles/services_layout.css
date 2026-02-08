@@ -1,0 +1,12 @@
+.services-layout {
+    position: absolute;
+    background-color: black;
+    padding: 50px;
+    border: 1px solid #0ff33d;
+    border-radius: 15px;
+
+    .free-servers-layout {
+        left: 50vw;
+    }
+    .physic-servers-layout {}
+}
