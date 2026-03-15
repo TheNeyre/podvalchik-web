@@ -1,6 +1,6 @@
-# ПОДВАЛЬЧИК.HOST
-> own by `.the?neyre` & `miorsi`
-> work in progress
+# ПОДВАЛЬЧИК.HOST ВЕБ-ПРИЛОЖЕНИЕ
+- В процессе разработки
 
-### Socials^^
-telegram/discord: @theneyre / @miorsi
+
+### Соц. сети
+`Разработку ведут:` @theneyre & @miorsi (telegram & discord)
