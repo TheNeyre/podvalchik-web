@@ -1,0 +1,73 @@
+* {
+  font-family: "MTS-WIBE-MEDIUM";
+  margin: 0;
+}
+body {
+  height: 100vh;
+  background: black;
+}
+
+/* --- FONTS --- */
+@font-face {
+  font-family: "MTS-WIBE-BOLD";
+  src: url(../public/font/MTS-WIBE-BOLD.ttf);
+}
+@font-face {
+  font-family: "MTS-WIBE-MEDIUM";
+  src: url(../public/font/MTS-WIBE-MEDIUM.ttf);
+}
+/* --- FIXES --- */
+img {
+  background: transparent;  
+  zoom: 1;
+  mix-blend-mode: lighten;
+  width: 900px;
+  float: right;
+}
+
+/* --- HEADER --- */
+header {
+  background: black;
+  padding-bottom: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom: #295100 solid 1px;
+
+  .header-list {
+    display: flex;
+    margin: 0;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 30px;
+    list-style: none;
+    background: transparent;
+  }
+  .header-page {
+    background: transparent;
+    a {
+
+      font-family: "MTS-WIBE-BOLD";
+      font-size: 20px;
+
+      position: relative;
+      overflow: hidden;
+      text-decoration: none;
+
+      background: linear-gradient(to right, #e0ffae, #ffffff 50%, #74E800 50%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 200% 100%;
+      background-position: 100%;
+
+      transition: background-position 275ms ease;
+    }
+    a:hover {
+      background-position: 0 100%;
+    }
+  }
+  .header-root-page {
+    margin-right: auto;
+  }
+}

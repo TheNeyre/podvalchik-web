@@ -1,7 +1,9 @@
-export default function About() {
+import Header from "./components/header"
+export default function Root() {
   return (
     <>
-    <h1>lmfao</h1>
+    <Header></Header>
+    <img src="/imgs/work1.png"/>
     </>
   )
 }
