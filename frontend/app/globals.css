@@ -1,10 +1,16 @@
 * {
   font-family: "MTS-WIBE-MEDIUM";
   margin: 0;
+  cursor: crosshair;
 }
 body {
   height: 100vh;
   background: black;
+  overflow: hidden;
+
+  background: linear-gradient(90deg, #041600 1%, transparent 1%) 1px 0, #000000;
+  background-size: 100px 1px;
+
 }
 
 /* --- FONTS --- */
@@ -18,20 +24,32 @@ body {
 }
 /* --- FIXES --- */
 img {
+  position: absolute;
   background: transparent;  
   zoom: 1;
+}
+.img-servers {
   mix-blend-mode: lighten;
-  width: 900px;
-  float: right;
+  width: 75%;
+  right: -40px;
+  top: 0;
+  opacity:1;
 }
 
 /* --- HEADER --- */
 header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
   background: black;
-  padding-bottom: 5px;
+  padding-top: 1px;
+  padding-bottom: 2px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border-bottom: #295100 solid 1px;
+  
+  transition: 0.5s ease;
 
   .header-list {
     display: flex;
@@ -46,28 +64,117 @@ header {
   .header-page {
     background: transparent;
     a {
-
-      font-family: "MTS-WIBE-BOLD";
-      font-size: 20px;
+      color: #ffffff;
+      font-family: "MTS-WIBE-MEDIUM";
+      font-size: 16px;
 
       position: relative;
       overflow: hidden;
       text-decoration: none;
+      background-image: linear-gradient(#74e800, #74e800);
+      background-position: 50% 105%;
+      background-repeat: no-repeat;
+      background-size: 0% 2px;
+      transition: background-size 0.3s;
+    }
+    a:hover {
+      background-size: 90% 2px;
+    }
+  }
+  .header-root-page {
+    /* a {
+      color: #ffffff;
+      font-family: "MTS-WIBE-BOLD";
+      font-size: 16px;
+      
+      position: relative;
+      overflow: hidden;
+      text-decoration: none;
+    } */
+     a {color: #74e800;}
+    margin-right: auto;
+  }
+}
+header:hover {
+  padding-top: 5px;
+  padding-bottom: 6px;
+  transition: 0.5s ease;
+}
 
-      background: linear-gradient(to right, #e0ffae, #ffffff 50%, #74E800 50%);
-      background-clip: text;
+
+.main-text {
+  color: #000000;
+  margin-top: 100px;
+  .parent-text {
+    line-height: 1.2;
+    font-family: "MTS-WIBE-BOLD";
+    -webkit-text-stroke: #74e800 1px;
+    font-size: 96px;
+    margin: 60px; padding: 0; margin-bottom: 0;
+    width: 60%;
+    .paret-better-text {
+      color: #74e800;
+    }
+  }
+  .children-text {
+    font-family: "MTS-WIBE-BOLD";
+    color: #74e800;
+    margin-left: 60px;
+    font-size: 24px;
+  }
+}
+
+.main-block-buttons {
+  margin: 60px;
+  display: flex;
+  gap: 30px;
+
+  .main-button {
+
+    background: linear-gradient(to right, #000000, #000000 50%, #74e800 50%);
+    background-size: 200% 100%;
+    background-position: 100%;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+
+    transition: all 275ms ease;
+
+    a {
+
+      background: linear-gradient(to right, #74e800, #74e800 50%, #000000 50%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-size: 200% 100%;
       background-position: 100%;
 
-      transition: background-position 275ms ease;
+      transition: all 275ms ease;
+
+
+      font-family: "MTS-WIBE-BOLD";
+      position: relative;
+      text-decoration: none;
+      color: #000000;
+      padding: 20px;
+      border: #74e800 1px solid;
+      border-radius: 15px;
+      background-color: transparent;
     }
     a:hover {
       background-position: 0 100%;
+      border: dashed #295100 1px;
     }
   }
-  .header-root-page {
-    margin-right: auto;
+
+  .main-button:hover {
+    background-position: 0 100%;
   }
+}
+
+.locked-obj {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  pointer-events: none;
 }

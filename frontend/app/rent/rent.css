@@ -1,0 +1,56 @@
+.tariff-calculator {
+    font-family: "MTS-WIBE-MEDIUM";
+    margin-top: 110px;
+    margin-left: 60px;
+    border: rgb(15, 44, 17) 1px solid;
+    border-radius: 15px;
+    background-color: black;
+    width: 35%;
+    padding: 25px;
+
+    .input-calculator-panel {
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .param-preview {
+
+            padding: 0;
+            display: flex;
+            list-style: none;
+            gap: 10px;
+
+            .param-preview-text {
+                align-self: center;
+                width: 30%;
+                color: #74e800;
+                margin-right: auto;
+
+            }
+            .param-edit-button {
+                background-color: black;
+                border: 1px dashed rgb(32, 55, 32);
+                color: #74e800;
+                border-radius: 10px;
+                padding: 15px 20px 15px 20px;
+            }
+            .param-input {
+                width: 24px;
+                background-color: black;
+                border: #74e800 1px dashed;
+                text-align: center;
+                color: #f7ffef;
+                padding: 15px;
+                border-radius: 10px;
+            }
+            .param-comment-text {
+                align-self: center;
+                text-align: right;
+                color: rgb(25, 26, 25);
+                margin-left: auto;
+                width: 20%;
+            }
+        }
+    }
+}
