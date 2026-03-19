@@ -13,7 +13,7 @@ export default function Root() {
     </div>
 
     <div className="main-block-buttons">
-      <div className="main-button"><a href="">ПАНЕЛЬ УПРАВЛЕНИЯ</a></div>
+      <div className="main-button"><a href="https://pl.xn--80adfskerh1f5b.host">ПАНЕЛЬ УПРАВЛЕНИЯ</a></div>
       <div className="main-button"><a href="/rent">АРЕНДА СЕРВЕРА</a></div>
     </div>
     </>
