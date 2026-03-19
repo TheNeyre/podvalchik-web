@@ -68,7 +68,7 @@ const TariffCalculator: React.FC = () => {
         
         <div className="tariff-calculator">
           <div className="output-calculator-panel">
-            <label htmlFor="total">{calculateTotal()}</label><label className='output-calculator-text-currency'>рублей</label>
+            <label htmlFor="total">{calculateTotal()}</label><label className='output-calculator-text-currency'>рублей{"/"}мес.</label>
           </div>
           
           <div className="input-calculator-panel">
