@@ -61,7 +61,7 @@ const TariffCalculator: React.FC = () => {
             {/* <button className="first-currency-selector" type="button">рубли</button>
             <button className="last-currency-selector" type="button">доллары</button> */}
             <div className="support-menu anim1">
-              <a className="support-menu-button" href="#">Написать в поддержку за заказом</a>
+              <a className="support-menu-button" href="https://t.me/podvalchik_support">Написать в поддержку за заказом</a>
             </div>
           </div>
         </div>
