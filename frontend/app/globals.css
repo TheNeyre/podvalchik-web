@@ -145,6 +145,7 @@ header:hover {
 
       background: linear-gradient(to right, #74e800, #74e800 50%, #000000 50%);
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
       background-size: 200% 100%;
       background-position: 100%;
@@ -155,11 +156,9 @@ header:hover {
       font-family: "MTS-WIBE-BOLD";
       position: relative;
       text-decoration: none;
-      color: #000000;
       padding: 20px;
       border: #74e800 1px solid;
       border-radius: 15px;
-      background-color: transparent;
     }
     a:hover {
       background-position: 0 100%;
@@ -178,3 +177,20 @@ header:hover {
   user-select: none;
   pointer-events: none;
 }
+
+.absolute-block {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
+

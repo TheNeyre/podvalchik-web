@@ -1,56 +1,133 @@
 .tariff-calculator {
-    font-family: "MTS-WIBE-MEDIUM";
-    margin-top: 110px;
-    margin-left: 60px;
-    border: rgb(15, 44, 17) 1px solid;
+  font-family: "MTS-WIBE-MEDIUM";
+  border: rgb(15, 44, 17) 1px solid;
+  border-radius: 15px;
+  background-color: black;
+  padding: 25px;
+  width: 550px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .input-calculator-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .param-preview {
+      padding: 0;
+      display: flex;
+      list-style: none;
+      gap: 10px;
+      .param-preview-text {
+        align-self: center;
+        width: 30%;
+        color: #74e800;
+        margin-right: auto;
+      }
+      .param-edit-button {
+        background-color: black;
+        border: 1px dashed rgb(32, 55, 32);
+        color: #74e800;
+        border-radius: 10px;
+        padding: 15px 20px 15px 20px;
+
+        &:hover {
+          background-color: #0e2c00;
+          border: 1px dashed rgb(72, 109, 48);
+        }
+        &:active {
+          background-color: #74e800;
+          color: black;
+        }
+
+      }
+      .param-input-li {
+        width: 60px;
+        height: 100%;
+      }
+      .param-input {
+        width: 95%;
+        height: 95%;
+        background: transparent;
+        border: #74e800 1px dashed;
+        text-align: center;
+        color: #f7ffef;
+        border-radius: 10px;
+        padding: 0;
+        margin: 0;
+      }
+      .param-comment-text {
+        align-self: center;
+        text-align: right;
+        color: rgb(29, 104, 0);
+        margin-left: auto;
+        width: 20%;
+      }
+    }
+  }
+  .output-calculator-panel {
+    border: 1px #74e800 dashed;
     border-radius: 15px;
     background-color: black;
-    width: 35%;
-    padding: 25px;
-
-    .input-calculator-panel {
-
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-
-        .param-preview {
-
-            padding: 0;
-            display: flex;
-            list-style: none;
-            gap: 10px;
-
-            .param-preview-text {
-                align-self: center;
-                width: 30%;
-                color: #74e800;
-                margin-right: auto;
-
-            }
-            .param-edit-button {
-                background-color: black;
-                border: 1px dashed rgb(32, 55, 32);
-                color: #74e800;
-                border-radius: 10px;
-                padding: 15px 20px 15px 20px;
-            }
-            .param-input {
-                width: 24px;
-                background-color: black;
-                border: #74e800 1px dashed;
-                text-align: center;
-                color: #f7ffef;
-                padding: 15px;
-                border-radius: 10px;
-            }
-            .param-comment-text {
-                align-self: center;
-                text-align: right;
-                color: rgb(25, 26, 25);
-                margin-left: auto;
-                width: 20%;
-            }
-        }
+    padding: 10px;
+    label {
+      color: #74e800;
+      font-size: 32px;
+      padding: 10px;
+      width: 500px;
+      height: 30px;
     }
+    .output-calculator-text-currency {
+      color: #184b00;
+      font-size: 12px;
+      padding: 0;
+    }
+  }
+}
+
+.tariff-parametrs-menu {
+  margin-top: 110px;
+  .tariff-currency-selector {
+    width: 550px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    button {
+      font-size: 14px;
+      padding: 16px;
+      border: none;
+      background-color: #74e800;
+      &:hover {
+        background-color: #9dff3b;
+      }
+      &:focus {
+        background-color: black;
+        border: dashed 1px #74e800;
+        color: #74e800;
+      }
+    }
+    .first-currency-selector {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      }
+    .last-currency-selector {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      }
+    .support-menu {
+      align-self: center;
+      text-align: center;
+
+      border-radius: 10px;
+      padding-bottom: 16px;
+      padding-top: 16px;
+      
+      .support-menu-button {
+        font-size: 14px;
+        position: relative;
+        padding: 17px;
+        border-radius: 10px;
+      }
+    }
+  }
 }
